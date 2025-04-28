@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "GuessingGame_backend": {
+      "main": "src/GuessingGame_backend/main.mo",
+      "type": "motoko"
+    },
+    "GuessingGame_frontend": {
+      "dependencies": [
+        "GuessingGame_backend"
+      ],
+      "source": [
+        "src/GuessingGame_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "GuessingGame_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
